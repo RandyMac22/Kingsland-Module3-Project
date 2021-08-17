@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kingsland</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="fallingLeaves">
+        <!--Each span represents an instance of a leaf-->
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        
+    </div>
+</div>
+<nav>
+    <div>
+        <img src="images/Kingsland-Logo.png" width="300" alt="kingsland-logo">
+        <a href="https://kingslanduniversity.com/#" target="_blank"><button>Enroll</button></a>
+    </div>
+
+    <div>
+        <ul>
+            <li><a href="https://kingslanduniversity.com/about/#our_mission" target="_blank">ABOUT US <i class="fas fa-angle-down"></i></a></li>
+            <li><a href="#">TRAININGS <i class="fas fa-angle-down"></i></a></li>
+            <li><a href="#">JOBS</a></li>
+            <li><a href="#">PARTNERS</a></li>
+            <li><a href="#">FORUM</a></li>
+            <li><a href="https://kingslanduniversity.com/blog/" target="_blank">BLOG <i class="fas fa-angle-down"></i></a></li>
+            <li><a href="#">CONTACTS</a></li>
+            <i class="fas fa-search"></i>
+
+            <img src="images/profile.jpg" alt="profile-photo">
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section class="education">
+        <article>
+            <div class="box-head">
+                <h3>MY COURSES</h3>
+            </div>
+
+            <div class="box-body">
+                <ul>
+                    <li>
+                        <span>JS Advanced - 7/2021</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                    <li>
+                        <span>JS Fundamentals - 6/2021</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                    <li>
+                        <span>Programming Basics - 3/2021</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-footer">
+                Total courses: 3
+            </div>
+        </article>
+
+        <article>
+            <div class="box-head">
+                <h3>UPCOMING COURSES</h3>
+            </div>
+
+            <div class="box-body">
+                <ul>
+                    <li>
+                        <span>JS Applications - August 2021</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                    <li>
+                        <span>JS Back-End - October 2021</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                    <li>
+                        <span>ReactJS - November 2021</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-footer">
+                Total courses: 3
+            </div>
+        </article>
+        <article>
+            <div class="box-head">
+                <h3>CONSULTATIONS</h3>
+            </div>
+
+            <div class="box-body">
+                <ul id="consults">
+                    <li>
+                        <span>Patrick - 04/25 - 02:50</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-footer">
+                Total consultation: <span id="consultCount">1</span>
+            </div>
+        </article>
+    </section>
+
+    <section class="slider">
+        <h1 style="text-align: center">
+              <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images\djangoprogrammi_thumbnail.png" alt="Django Web Development"></div>
+                <div class="swiper-slide"><img src="images\html-css-fundaments.jpg" alt="HTML & CSS Fundamentals"></div>
+                <div class="swiper-slide"><img src="images\js-fundamentals.jpg" alt="JavaScript Fundamentals"></div>
+                <div class="swiper-slide"><img src="images\programming-fundamentals.png" alt="Programming Fundamentals"></div>
+                <div class="swiper-slide"><img src="images\pt-fund.png" alt="Python Fundamentals"></div>
+            </div>
+                <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>                  
+        </h1>
+    </section>
+    <section class="lecture-meeting">
+        <h2>
+            Book a meeting with your lecturer
+        </h2>
+        <section class="meeting-main">
+            <form>
+                <p><i class="fas fa-user"></i><input type="text" name="username" id="username" placeholder="Username"/></p>
+                <p>
+                    <i class="fas fa-graduation-cap"></i>
+                    <select style="text-indent: 35px">
+                        <option value="JSAdv">JS Advanced</option>
+                        <option value="JSApp">JS Applications1</option>
+                        <option value="JSBack">JS Back-End</option>
+                        <option value="React">ReactJS</option>
+                    </select>
+                </p>
+                <p>
+                    <i class="fas fa-male"></i>
+                    <select id="lecturer" style="text-indent: 35px">
+                        <option id="Patrick" value="Patrick">Patrick Galloway </option>
+                        <option id="Anar" value="Anar">Anar Mahmen</option>
+                        <option id="Simeon"value="Simeon">Simeon Mandazhiev</option>
+                        <option id="Katoshki" value="Katoshki">Simeon Katoshki</option>
+                    </select>
+                </p>
+                <p>
+                    <i class="fas fa-hourglass-start"></i><input id="dateTimeInput" class="form-control" type="text" placeholder="YYYY/DD/MM"/>
+                </p>
+            </form>
+            <div style="text-align: center;">
+            <button id="bookHourBtn" data-notify-text>Send</button>
+            </div>
+        </section>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrapper">
+        <section class="about">
+            <header>
+                <h3>KINGSLAND UNIVERSITY</h3>
+            </header>
+            <div class="ul">
+                <ul>
+                    <li><a href="https://kingslanduniversity.com/about/#our_mission" target="_blank">About us</a></li>
+                    <li><a href="#">Curriculum</a></li>
+                    <li><a href="#">Certificates</a></li>
+                    <li><a href="#">Trainers</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Tuition fees</a></li>
+                    <li><a href="#">How to apply</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="initiatives">
+            <header>
+                <h3>ALL INITIATIVES</h3>
+            </header>
+            <ul>
+                <li><a href="https://www.kingsland.io/" target="_blank">Kingsland Innovation</a></li>
+                <li><a href="https://kingsland.codeavengers.com/" target="_blank">Kingsland Coders</a></li>
+                <li><a href="#">Kingsland Job Boards</a></li>
+                <li><a href="#">Kingsland Academy</a></li>
+            </ul>
+        </section>
+
+        <section class="partners">
+            <header>
+                <h3>MAIN PARTNERS</h3>
+            </header>
+            <div class="ul">
+                <ul>
+                    <li><a href="https://www.goodmoney.com/" target="_blank">Good Money</a></li>
+                    <li><a href="https://www.np.edu.sg/Pages/default.aspx" target="_blank">Ngee Ann Polytechnic</a></li>
+                    <li><a href="https://netki.com/" target="_blank">Netki</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="https://www.paybook.com/w/en/paybook/site/home" target="_blank">Paybook</a></li>
+                    <li><a href="https://www.bitt.com/" target="_blank">Bitt</a></li>
+                    <li><a href="https://www.wbf.info/" target="_blank">Word Blockchain Forum</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</footer>
+<!--solution JS-->
+<script src="scripts/solution.js"></script>
+<!--notify JS-->
+<script src="scripts/notify.min.js"></script>
+<!--Swiper JS-->>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+});
+</script>
+<!--Flatpickr JS-->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    flatpickr("#dateTimeInput", {
+        enableTime: true,
+        dateFormat: "Y/m/d H:i",
+        inline: false,
+        minDate: "today",
+        step: 0
+    });
+</script>
+</body>
+
+</html>
